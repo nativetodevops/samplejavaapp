@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('compile') {
 	   steps {
-		git url: 'https://github.com/lerndevops/samplejavaapp.git'
+		git url: 'https://github.com/nativetodevops/samplejavaapp.git'
 		sh script: '/opt/apache-maven-3.6.3/bin/mvn compile'
            }
         }
